@@ -10,8 +10,5 @@ apiurl=$(grep "apiUrl" /opt/outline/access.txt | cut -d ':' -f 2- | tr -d '[:spa
 
 # 利用提取到的 certsha256 和 apiurl 变量创建 access.json 文件
 cat <<- EOF > /opt/outline/access.json
-{
-  "certSha256": "$certsha256",
-  "apiUrl": "$apiurl"
-}
+{"certSha256": "$certsha256", "apiUrl": "$apiurl"}
 EOF
