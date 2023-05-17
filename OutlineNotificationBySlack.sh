@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# 通过 slack 发送 /opt/outline/access.json
+# 通过 slack 发送 /opt/outline/access.txt
 
 # 读取Outline访问信息，并通过curl发送到指定URL
 access_content=$(sudo cat /opt/outline/access.txt)
